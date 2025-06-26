@@ -1,0 +1,35 @@
+# Strategickhaos DAO Compliance Repository
+
+This public repository serves as the legal and operational documentation hub for **Strategickhaos DAO LLC**, a registered entity in the state of Wyoming.
+
+## 🔒 Entity Details
+
+- **Legal Name:** Strategickhaos DAO LLC
+- **Trade Name (DBA):** ValorYield Engine
+- **EIN:** 39-2900295
+- **Filing ID:** 2025-001708194
+- **State:** Wyoming (Secretary of State)
+- **Status:** Good Standing
+
+## 🏦 Banking & Financial Integration
+
+- **Navy Federal DAO Business Account** (Mbr + Money Market)
+- Stripe, PayPal, and Zelle integrations pending
+- DAO payout routing via GitHub & smart contract automation
+
+## 📄 Documents on File
+
+- [x] EIN Confirmation Letter (IRS CP 575)
+- [x] Articles of Organization (Wyoming)
+- [x] Certificate of Good Standing
+- [x] NFCU Form 98 submission package
+
+## 🔁 CLI Automation
+
+Scripts will auto-submit banking packets, ZIP and validate DAO compliance.
+
+```bash
+python send_email.py \
+  --to "business@nfcuenet.org" \
+  --subject "Strategickhaos DAO LLC – NFCU Form 98 Submission" \
+  --attach "NFCU_Submission_StrategickhaosDAO.zip"
