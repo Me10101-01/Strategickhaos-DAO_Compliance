@@ -1,0 +1,21 @@
+body {
+  background-color: black;
+  color: #00ff00;
+  font-family: monospace;
+  padding: 2rem;
+}
+
+a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.terminal {
+  max-width: 800px;
+  margin: auto;
+  white-space: pre-wrap;
+}
