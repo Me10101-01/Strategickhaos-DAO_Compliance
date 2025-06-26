@@ -1,0 +1,18 @@
+name: UIDP Notarizer
+
+on:
+  schedule:
+    - cron: '0 3 * * *'  # Daily at 3AM UTC
+
+jobs:
+  notarize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Commit new UIDP logs
+        run: |
+          git config --global user.name "Strategickhaos Auto"
+          git config --global user.email "bot@strategickhaos.ai"
+          git add donate/stripe_checkout/stripe_donations.log || echo "No new logs"
+          git commit -m "🔐 Nightly UIDP donation log commit" || echo "Nothing to commit"
+          git push
