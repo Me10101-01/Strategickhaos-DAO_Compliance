@@ -1,21 +1,35 @@
 # Strategickhaos DAO LLC 🧠⚖️
-Decentralized Autonomous Organization legally filed in Wyoming.
 
-## 💾 Core Compliance Highlights
+Decentralized Autonomous Organization legally filed in Wyoming.  
+Built from the command line. No lawyers. No UI. No middlemen.
+
+## ✅ Core Compliance Highlights
 - EIN: 39-2900295 (IRS-Verified)
 - Articles of Organization ✅
 - Certificate of Good Standing ✅
-- Navy Federal Business Bank ✅
+- Navy Federal DAO Banking ✅
 
 ## 🔗 Links
-- GitHub: [Strategickhaos DAO Compliance](https://github.com/Me10101-01/Strategickhaos-DAO_Compliance)
-- Website: https://strategickhaos.github.io  
-- UIDP Audit: /docs/contracts/uidp/
+- 🌐 Website: https://strategickhaos.github.io  
+- 💾 Repo: https://github.com/Me10101-01/Strategickhaos-DAO_Compliance  
+- 📜 NFT License: [/docs/contracts/uidp/nft_payloads/world_first_claim.json](docs/contracts/uidp/nft_payloads/world_first_claim.json)
 
-## 🧠 Tech Stack
+## ⚙️ Tech Stack
 - AI + Smart Contract Ecosystem
-- Bugcrowd & CEH-Ready
-- Stripe + PayPal (in progress)
+- GitHub notarization
+- UIDP NFT automation
+- Stripe + PayPal (donation-triggered licensing)
 
-## 📜 License
-MIT — Built with 💡 by Strategickhaos DAO.
+## 🧾 License
+MIT — Built with 🗡️ by Strategickhaos DAO
+
+---
+
+### 🧠 Strategickhaos UIDP Engine — Deployed & Verified
+
+- 📄 [Income Declaration](docs/contracts/uidp/UIDP_INCOME_ENGINE_DECLARATION.md)
+- 🔐 [NFT Payload](docs/contracts/uidp/nft_payloads/UIDP_INCOME_ENGINE.json)
+- 📡 [Live Site](https://me10101-01.github.io/Strategickhaos-DAO_Compliance)
+- 🧾 [IPFS Badge Verified](https://ipfs.io/ipfs/QmYoursHere)
+
+💠 `Autonomy is our proof-of-work.`  
