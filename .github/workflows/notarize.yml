@@ -1,20 +1,16 @@
 name: 🔐 Notarize UIDP License
 
 on:
-  push:
-    paths:
-      - 'docs/contracts/uidp/**'
+  pull_request:
+    branches: [main]
 
 jobs:
   notarize:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
+      - name: 🧾 Checkout
         uses: actions/checkout@v3
-
-      - name: Hash UIDP Licenses
-        run: |
-          for file in docs/contracts/uidp/*.txt; do
-            hash=\$(sha256sum "\$file" | awk '{print \$1}')
-            echo "[📜] \$file => \$hash"
-          done
+      - name: 🧠 Setup GPG
+        run: sudo apt-get update && sudo apt-get install -y gnupg
+      - name: 🧠 Run UIDP Notarizer
+        run: bash ./scripts/notarize.sh
