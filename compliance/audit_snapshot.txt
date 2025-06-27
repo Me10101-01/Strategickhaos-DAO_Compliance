@@ -1,0 +1,35 @@
+b6897ce 🛡️ DAO Legal Framework Committed
+68ff331 ⚖️ Finalized legal disclaimers: Non-Custodial + Fiduciary + DAO Immunity
+d61411d ✅ EIN confirmed and recorded: Strategickhaos DAO (39-2923503)
+0483c25 ✅ EIN confirmed: Strategickhaos DAO (39-2923503)
+713a690 📘 Patch Strategickhaos README with final UIDP footprint
+433b26e 🎨 Add Stylized CSS Sheet for Strategickhaos DAO Web
+0422bb2 🌐 Finalize Strategickhaos DAO Web Layer w/ favicon + auto-refresh + badge
+508017b 🧠 Final UIDP Engine Web Layer with Badge + Treasury
+8d0bf75 🎨 Add favicon, IPFS badge & simulated treasury refresh
+67e21e5 🌐 Add UIDP Income Engine homepage to GitHub Pages
+9825114 🔐 NFT Payload for Income Engine UIDP Declaration
+cb6a5ec 📄 UIDP: Income Engine Declaration + NFT payload
+cf0f0aa 🌐 Strategickhaos DAO Homepage Deployed
+31d4b89 📄 Add index.html to trigger GitHub Pages setup
+443a742 🧾 Minted NFT payload + hash for World First UIDP declaration
+e445754 🧠🌍 World First Claim — Strategickhaos DAO Global Declaration
+147898b 📌 UIDP NFT Engine & IPFS Pinning Live
+a69c9d8 🔐 Added SHA256 + NFT metadata for UIDP contracts
+630f81f 📄 UIDP NFT Licensing Registry Initialized
+52d8fb1 📄 ValorYield Engine — Autonomous UIDP Financial Flow
+a95e29c 📄 Added placeholder Stripe donation log
+5fe4abf ⚙️ Added GitHub Action for nightly UIDP donation log notarization
+a8b58b8 🌐 Public Donation Page for ValorDrive Foundation
+61d5b21 💸 Added UIDP Donation System (Stripe + PayPal) for ValorDrive
+fa92b5b 🔐 Added UIDP + Notarization strategy for 501(c)(3)
+42d566a 🧾 Drafted IRS Form 1023 Application for ValorDrive Foundation
+84f4c9c 📄 Added Privacy Policy for payments
+3f5311c 📄 Added Stripe Terms of Service
+080e0b1 🏛️ Scaffolded Stripe & 501(c)(3) compliance folders
+f480824 🧾 Initialized Stripe + 501(c)(3) compliance modules
+17469ea 📜 UIDP: Strategickhaos to ValorDrive licensing agreement
+9beb49f 🧠 Strategickhaos DAO — Final Autonomous Operating Status String
+a799f9c �� Strategickhaos DAO Launch + Compliance Overview
+b7e268b Update README.md with DAO compliance structure
+a89dc8c Initial commit
