@@ -1,0 +1,24 @@
+body {
+  font-family: 'Courier New', monospace;
+  background: #0d1117;
+  color: #c9d1d9;
+  padding: 2em;
+}
+h1 {
+  color: #58a6ff;
+}
+a {
+  color: #79c0ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.badge {
+  display: inline-block;
+  margin-top: 1em;
+}
+.auto {
+  margin-top: 2em;
+  color: #58ff9f;
+}
