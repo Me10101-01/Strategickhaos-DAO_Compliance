@@ -1,0 +1,9 @@
+{
+  "uidp_license_file": "UIDP_INCOME_ENGINE_DECLARATION.md",
+  "sha256_hash": "$(sha256sum docs/contracts/uidp/UIDP_INCOME_ENGINE_DECLARATION.md | awk '{print $1}')",
+  "dao": "Strategickhaos DAO LLC",
+  "issued_to": "Strategickhaos Autonomous Income Engine",
+  "timestamp": "$(date -u +"%Y-%m-%dT%H:%M:%SZ")",
+  "license_type": "UIDP Income NFT License",
+  "dao_repo": "https://github.com/Me10101-01/Strategickhaos-DAO_Compliance"
+}
