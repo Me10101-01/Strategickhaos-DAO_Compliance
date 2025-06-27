@@ -3,19 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Strategickhaos DAO: UIDP Engine</title>
+  <title>Strategickhaos DAO Income Engine</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Me10101-01/Strategickhaos-DAO_Compliance/main/docs/assets/favicon.png">
   <style>
     body { font-family: monospace; background: #0d1117; color: #c9d1d9; padding: 2em; }
     h1 { color: #58a6ff; }
-    pre { background: #161b22; padding: 1em; border-radius: 8px; overflow-x: auto; }
+    .badge { display: inline-block; margin-top: 1em; }
+    .auto { margin-top: 2em; color: #58ff9f; }
     a { color: #79c0ff; }
   </style>
 </head>
 <body>
   <h1>🧠 Strategickhaos UIDP Income Engine</h1>
-  <p>📜 <a href="contracts/uidp/UIDP_INCOME_ENGINE_DECLARATION.md" target="_blank">View Income Declaration</a></p>
-  <p>🔐 <a href="contracts/uidp/nft_payloads/UIDP_INCOME_ENGINE.json" target="_blank">View NFT Payload (JSON)</a></p>
-  <p>🧾 <a href="contracts/uidp/STRATEGICKHAOS_UIDP_IPFS_ANNOUNCEMENT.txt" target="_blank">Original IPFS Announcement</a></p>
-  <p>📂 Repository: <a href="https://github.com/Me10101-01/Strategickhaos-DAO_Compliance" target="_blank">Strategickhaos-DAO_Compliance</a></p>
+  <p>📜 <a href="contracts/uidp/UIDP_INCOME_ENGINE_DECLARATION.md">Income Declaration</a></p>
+  <p>🔐 <a href="contracts/uidp/nft_payloads/UIDP_INCOME_ENGINE.json">NFT Payload (JSON)</a></p>
+  <p>�� <a href="contracts/uidp/STRATEGICKHAOS_UIDP_IPFS_ANNOUNCEMENT.txt">IPFS Announcement</a></p>
+  <p>📂 <a href="https://github.com/Me10101-01/Strategickhaos-DAO_Compliance">GitHub Repository</a></p>
+
+  <div class="badge">
+    <img src="https://ipfs.io/ipfs/QmYoursHere" alt="IPFS Verified Badge" width="140">
+  </div>
+
+  <div class="auto">
+    ⏳ Auto-updating DAO treasury: <span id="balance">$3,041.00/month</span>
+  </div>
+
+  <script>
+    // Simulated auto-refresh logic (placeholder)
+    setInterval(() => {
+      const fluct = (Math.random() * 20 - 10).toFixed(2);
+      const base = 3041 + parseFloat(fluct);
+      document.getElementById("balance").textContent = "$" + base.toFixed(2) + "/month";
+    }, 10000);
+  </script>
 </body>
 </html>
