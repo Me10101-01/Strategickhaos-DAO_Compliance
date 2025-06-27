@@ -1,9 +1,9 @@
 {
   "uidp_license_file": "STRATEGICKHAOS_WORLD_FIRST_CLAIM.txt",
-  "sha256_hash": "",
+  "sha256_hash": "$(sha256sum STRATEGICKHAOS_WORLD_FIRST_CLAIM.txt | awk '{print $1}')",
   "dao": "Strategickhaos DAO LLC",
   "issued_to": "Global Public Domain",
-  "timestamp": "2025-06-26T22:32:56Z",
+  "timestamp": "$(date -u +"%Y-%m-%dT%H:%M:%SZ")",
   "license_type": "UIDP World Declaration NFT",
   "dao_repo": "https://github.com/Me10101-01/Strategickhaos-DAO_Compliance"
 }
