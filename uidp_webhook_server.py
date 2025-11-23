@@ -328,6 +328,18 @@ if __name__ == '__main__':
     print("  - Health: /health")
     print("=" * 60)
     print("\nStarting server on http://localhost:5001")
+    
+    # Check if in development or production mode
+    is_dev = os.environ.get('FLASK_ENV') == 'development'
+    
+    if is_dev:
+        print("⚠️  WARNING: Running in DEVELOPMENT mode with debug enabled")
+        print("   Do NOT use this configuration in production!")
+    else:
+        print("✓ Running in PRODUCTION mode (debug disabled)")
+    
     print("Press Ctrl+C to stop\n")
     
-    app.run(host='0.0.0.0', port=5001, debug=True)
+    # SECURITY: Only enable debug in development environment
+    # Production must have FLASK_ENV != 'development'
+    app.run(host='0.0.0.0', port=5001, debug=is_dev)
