@@ -9,8 +9,10 @@
 United States
 
 **Application Type**: Provisional Patent Application (35 U.S.C. § 111(b))  
-**Filing Date**: November 2025  
-**Micro Entity Status**: Claimed
+**Filing Date**: [TO BE DETERMINED - Must be actual date of USPTO submission]  
+**Micro Entity Status**: Claimed  
+
+**IMPORTANT**: This provisional patent application establishes priority for 12 months. The exact filing date will be assigned by the USPTO upon submission and is critical for establishing priority claims. Replace "[TO BE DETERMINED]" with the actual filing date when submitted via EFS-Web.
 
 ---
 

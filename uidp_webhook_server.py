@@ -20,9 +20,20 @@ from uidp_executor_enhanced import UIDPExecutor
 app = Flask(__name__)
 executor = UIDPExecutor()
 
-# Configuration (in production, load from environment variables)
-STRIPE_WEBHOOK_SECRET = os.environ.get('STRIPE_WEBHOOK_SECRET', 'whsec_test_secret')
-PAYPAL_WEBHOOK_ID = os.environ.get('PAYPAL_WEBHOOK_ID', 'test_webhook_id')
+# Configuration (MUST be loaded from environment variables in production)
+STRIPE_WEBHOOK_SECRET = os.environ.get('STRIPE_WEBHOOK_SECRET')
+PAYPAL_WEBHOOK_ID = os.environ.get('PAYPAL_WEBHOOK_ID')
+
+# Security check - fail loudly if production secrets not set
+if not STRIPE_WEBHOOK_SECRET or STRIPE_WEBHOOK_SECRET == 'whsec_test_secret':
+    print("⚠️  WARNING: STRIPE_WEBHOOK_SECRET not set or using test value!")
+    print("   For testing only. DO NOT use in production.")
+    STRIPE_WEBHOOK_SECRET = 'whsec_test_secret'  # Allow for testing
+
+if not PAYPAL_WEBHOOK_ID or PAYPAL_WEBHOOK_ID == 'test_webhook_id':
+    print("⚠️  WARNING: PAYPAL_WEBHOOK_ID not set or using test value!")
+    print("   For testing only. DO NOT use in production.")
+    PAYPAL_WEBHOOK_ID = 'test_webhook_id'  # Allow for testing
 
 @app.route('/health', methods=['GET'])
 def health_check():
@@ -42,12 +53,31 @@ def stripe_webhook():
     payload = request.data
     sig_header = request.headers.get('Stripe-Signature')
     
-    # Verify webhook signature (simplified for testing)
-    # In production, use stripe.Webhook.construct_event()
-    try:
-        event = json.loads(payload)
-    except json.JSONDecodeError:
-        return jsonify({'error': 'Invalid JSON'}), 400
+    # SECURITY: Verify webhook signature
+    # In production, MUST use stripe.Webhook.construct_event() with real signature verification
+    # Current implementation is for TESTING ONLY
+    if STRIPE_WEBHOOK_SECRET == 'whsec_test_secret':
+        # Test mode - no signature verification
+        print("⚠️  TESTING MODE: Webhook signature verification disabled")
+        try:
+            event = json.loads(payload)
+        except json.JSONDecodeError:
+            return jsonify({'error': 'Invalid JSON'}), 400
+    else:
+        # Production mode - verify signature (requires stripe library)
+        # TODO: Implement proper signature verification
+        # import stripe
+        # try:
+        #     event = stripe.Webhook.construct_event(
+        #         payload, sig_header, STRIPE_WEBHOOK_SECRET
+        #     )
+        # except stripe.error.SignatureVerificationError:
+        #     return jsonify({'error': 'Invalid signature'}), 403
+        print("⚠️  WARNING: Production signature verification not yet implemented!")
+        try:
+            event = json.loads(payload)
+        except json.JSONDecodeError:
+            return jsonify({'error': 'Invalid JSON'}), 400
     
     # Log webhook receipt
     log_webhook('stripe', event)

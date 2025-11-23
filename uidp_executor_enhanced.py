@@ -161,10 +161,41 @@ class UIDPExecutor:
     def execute_transfer(self, amount, transaction_id):
         """
         Execute actual transfer to charity account
-        In production, this would call bank API or blockchain transfer
-        Currently simulated for testing
+        
+        ⚠️  PRODUCTION IMPLEMENTATION REQUIRED ⚠️
+        
+        This is a SIMULATED transfer for testing and development.
+        
+        Before going live in production, you MUST:
+        1. Integrate with your bank's API (e.g., Plaid, Stripe Connect, bank ACH API)
+        2. Implement proper authentication and authorization
+        3. Add transaction confirmation and reconciliation
+        4. Implement error handling and retry logic
+        5. Add fraud detection and limits
+        6. Test thoroughly with small amounts first
+        7. Implement monitoring and alerting
+        
+        Example production implementation:
+        ```python
+        # Using bank API
+        transfer_result = bank_api.transfer(
+            from_account=self.config['for_profit_entity']['bank_account'],
+            to_account=self.config['charity_entity']['bank_account'],
+            amount=amount,
+            reference=transaction_id,
+            description="UIDP 7% charitable allocation"
+        )
+        return transfer_result
+        ```
+        
+        Args:
+            amount: Amount to transfer to charity account
+            transaction_id: Unique transaction identifier
+            
+        Returns:
+            dict: Transfer result with status and details
         """
-        # SIMULATED - In production would execute actual transfer
+        # SIMULATED - Replace with actual transfer in production
         result = {
             'status': 'simulated',
             'amount': amount,
@@ -176,7 +207,8 @@ class UIDPExecutor:
         }
         
         print(f"[UIDP EXECUTOR] {result['message']}")
-        print("[UIDP EXECUTOR] NOTE: In production, actual bank transfer would execute here")
+        print("[UIDP EXECUTOR] ⚠️  NOTE: This is a SIMULATED transfer for testing")
+        print("[UIDP EXECUTOR] ⚠️  In production, implement actual bank transfer here")
         
         return result
     
