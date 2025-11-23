@@ -13,6 +13,7 @@ Built from the command line. No lawyers. No UI. No middlemen.
 - 🌐 Website: https://strategickhaos.github.io  
 - 💾 Repo: https://github.com/Me10101-01/Strategickhaos-DAO_Compliance  
 - 📜 NFT License: [/docs/contracts/uidp/nft_payloads/world_first_claim.json](docs/contracts/uidp/nft_payloads/world_first_claim.json)
+- 🏛️ USPTO Tracking: [MyUSPTO_USPTO.html](MyUSPTO_USPTO.html)
 
 ## ⚙️ Tech Stack
 - AI + Smart Contract Ecosystem
