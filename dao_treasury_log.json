@@ -1,1 +1,76 @@
-{"signal": "BUY", "timestamp": "2025-06-26T22:00:00Z"}\n{"signal": "BUY", "timestamp": "2025-06-26T21:00:00Z"}\n
+{
+  "transactions": [
+    {
+      "uidp_transaction_id": "uidp-20251123-f17e2b7c",
+      "external_transaction_id": "ch_test_001",
+      "timestamp": "2025-11-23T04:14:31.147816Z",
+      "payment_processor": "stripe",
+      "for_profit_entity": {
+        "name": "Strategickhaos DAO LLC",
+        "ein": "39-2900295"
+      },
+      "charity_entity": {
+        "name": "ValorYield Engine",
+        "ein": "39-2923503"
+      },
+      "amounts": {
+        "total_revenue": 1000.0,
+        "charity_allocation": 70.0,
+        "for_profit_retention": 930.0,
+        "charity_percentage": 7.0
+      },
+      "metadata": {
+        "test": true
+      },
+      "status": "processed"
+    },
+    {
+      "uidp_transaction_id": "uidp-20251123-edf291e2",
+      "external_transaction_id": "pp_test_002",
+      "timestamp": "2025-11-23T04:14:31.148445Z",
+      "payment_processor": "paypal",
+      "for_profit_entity": {
+        "name": "Strategickhaos DAO LLC",
+        "ein": "39-2900295"
+      },
+      "charity_entity": {
+        "name": "ValorYield Engine",
+        "ein": "39-2923503"
+      },
+      "amounts": {
+        "total_revenue": 500.0,
+        "charity_allocation": 35.0,
+        "for_profit_retention": 465.0,
+        "charity_percentage": 7.0
+      },
+      "metadata": {
+        "test": true
+      },
+      "status": "processed"
+    },
+    {
+      "uidp_transaction_id": "uidp-20251123-f80047ed",
+      "external_transaction_id": "manual_003",
+      "timestamp": "2025-11-23T04:14:31.148955Z",
+      "payment_processor": "manual",
+      "for_profit_entity": {
+        "name": "Strategickhaos DAO LLC",
+        "ein": "39-2900295"
+      },
+      "charity_entity": {
+        "name": "ValorYield Engine",
+        "ein": "39-2923503"
+      },
+      "amounts": {
+        "total_revenue": 250.0,
+        "charity_allocation": 17.5,
+        "for_profit_retention": 232.5,
+        "charity_percentage": 7.0
+      },
+      "metadata": {
+        "test": true
+      },
+      "status": "processed"
+    }
+  ]
+}

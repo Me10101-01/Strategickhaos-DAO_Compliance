@@ -1,0 +1,64 @@
+{
+  "name": "UIDP Transaction Receipt #2",
+  "description": "Charitable distribution receipt for uidp-20251123-edf291e2",
+  "image": "ipfs://[TO_BE_UPLOADED]",
+  "attributes": [
+    {
+      "trait_type": "Transaction ID",
+      "value": "uidp-20251123-edf291e2"
+    },
+    {
+      "trait_type": "Timestamp",
+      "value": "2025-11-23T04:14:31.148445Z"
+    },
+    {
+      "trait_type": "Revenue Amount",
+      "value": 500.0
+    },
+    {
+      "trait_type": "Charity Allocation",
+      "value": 35.0
+    },
+    {
+      "trait_type": "Charity Percentage",
+      "value": "7%"
+    },
+    {
+      "trait_type": "Payment Processor",
+      "value": "paypal"
+    },
+    {
+      "trait_type": "For-Profit Entity",
+      "value": "Strategickhaos DAO LLC"
+    },
+    {
+      "trait_type": "Charity Entity",
+      "value": "ValorYield Engine"
+    }
+  ],
+  "external_url": "https://github.com/Me10101-01/Strategickhaos-DAO_Compliance",
+  "transaction_data": {
+    "uidp_transaction_id": "uidp-20251123-edf291e2",
+    "external_transaction_id": "pp_test_002",
+    "timestamp": "2025-11-23T04:14:31.148445Z",
+    "payment_processor": "paypal",
+    "for_profit_entity": {
+      "name": "Strategickhaos DAO LLC",
+      "ein": "39-2900295"
+    },
+    "charity_entity": {
+      "name": "ValorYield Engine",
+      "ein": "39-2923503"
+    },
+    "amounts": {
+      "total_revenue": 500.0,
+      "charity_allocation": 35.0,
+      "for_profit_retention": 465.0,
+      "charity_percentage": 7.0
+    },
+    "metadata": {
+      "test": true
+    },
+    "status": "processed"
+  }
+}

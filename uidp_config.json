@@ -1,0 +1,30 @@
+{
+  "for_profit_entity": {
+    "name": "Strategickhaos DAO LLC",
+    "ein": "39-2900295",
+    "bank_account": "[REDACTED]"
+  },
+  "charity_entity": {
+    "name": "ValorYield Engine",
+    "ein": "39-2923503",
+    "bank_account": "[REDACTED]"
+  },
+  "beneficiaries": [
+    {
+      "name": "St. Jude Children's Research Hospital",
+      "allocation": 0.25
+    },
+    {
+      "name": "M\u00e9decins Sans Fronti\u00e8res",
+      "allocation": 0.2
+    },
+    {
+      "name": "Veterans Programs",
+      "allocation": 0.4
+    },
+    {
+      "name": "Educational Institutions",
+      "allocation": 0.15
+    }
+  ]
+}
